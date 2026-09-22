@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bridge Forward — Home</title>
+<meta name="description" content="Asociación Bridge Forward is a non-profit organization committed to human dignity, protection, education, and creating opportunities for people and communities.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --bg:#F5F7F6; --surface:#FFFFFF; --surface-alt:#EDF3F0; --ink:#142433; --ink-soft:#4B5F70;
+  --brand:#163A5F; --brand-deep:#0D2437; --teal:#1E8A93; --green:#3AA267; --orange:#F2954A; --orange-deep:#D97A2E;
+  --border:#DCE4E1; --shadow:0 1px 2px rgba(14,36,55,.06), 0 8px 24px -12px rgba(14,36,55,.22);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Lora",Georgia,serif;margin:0;text-wrap:balance}
+a{color:var(--brand);text-decoration:none}
+a:hover{color:var(--orange-deep)}
+button,input,select,textarea{font:inherit}
+img,svg{display:block;max-width:100%}
+input,select,textarea{width:100%;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--ink);padding:10px 12px}
+textarea{resize:vertical;min-height:90px}
+:focus-visible{outline:2.5px solid var(--orange);outline-offset:3px;border-radius:4px}
+</style>
+</head>
+<body>
+
+<div style="width:100%;min-height:100vh;display:flex;flex-direction:column;background:var(--bg);color:var(--ink)">
+
+<div id="reviewStrip" style="background:var(--brand-deep);color:#E7EEF3;font-size:.82rem;border-bottom:1px solid rgba(255,255,255,.08)">
+  <div style="max-width:1120px;margin-inline:auto;padding:9px clamp(20px,4vw,32px);display:flex;align-items:center;gap:12px;flex-wrap:wrap">
+    <span style="flex:none;background:var(--orange);color:#1c1206;font-weight:700;font-size:.68rem;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:4px">Draft</span>
+    <span style="flex:1;min-width:200px;color:#C9D8E2">Review copy — shown in English for feedback. The final site ships in Spanish (primary), with English &amp; French translations.</span>
+    <button type="button" id="dismissReviewBtn" aria-label="Dismiss" style="flex:none;background:none;border:0;color:#C9D8E2;font-size:1.05rem;line-height:1;cursor:pointer;padding:4px">✕</button>
+  </div>
+</div>
+
+<header style="background:var(--surface);border-bottom:1px solid var(--border)">
+  <div style="max-width:1120px;margin-inline:auto;padding:14px clamp(20px,4vw,32px);display:flex;align-items:center;gap:18px;flex-wrap:wrap;row-gap:10px">
+    <a href="#home" style="display:flex;align-items:center;gap:10px;flex:none">
+      <img src="assets/logo.jpg" alt="Asociación Bridge Forward" style="height:104px;width:auto;border-radius:12px">
+    </a>
+    <nav aria-label="Primary" style="display:flex;gap:20px;flex-wrap:wrap;font-size:.9rem;font-weight:500">
+      <a href="#about" style="color:var(--ink-soft)">About</a>
+      <a href="#programs" style="color:var(--ink-soft)">Programs</a>
+      <a href="#projects" style="color:var(--ink-soft)">Projects</a>
+      <a href="#involved" style="color:var(--ink-soft)">Get Involved</a>
+      <a href="#news" style="color:var(--ink-soft)">News</a>
+      <a href="#contact" style="color:var(--ink-soft)">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:10px;margin-left:auto">
+      <div role="group" aria-label="Language" style="display:flex;gap:3px;background:var(--surface-alt);border:1px solid var(--border);border-radius:99px;padding:3px">
+        <button type="button" disabled title="Available once the final site launches" style="border:0;background:none;font:inherit;font-size:.72rem;font-weight:700;letter-spacing:.03em;padding:4px 9px;border-radius:99px;color:var(--ink-soft);opacity:.45;cursor:not-allowed">ES</button>
+        <button type="button" aria-current="true" style="border:0;font:inherit;font-size:.72rem;font-weight:700;letter-spacing:.03em;padding:4px 9px;border-radius:99px;background:var(--brand);color:#F5F7F6;cursor:default">EN</button>
+        <button type="button" disabled title="Available once the final site launches" style="border:0;background:none;font:inherit;font-size:.72rem;font-weight:700;letter-spacing:.03em;padding:4px 9px;border-radius:99px;color:var(--ink-soft);opacity:.45;cursor:not-allowed">FR</button>
+      </div>
+      <a href="#donate" style="display:inline-flex;align-items:center;justify-content:center;border-radius:9px;font-weight:600;font-size:.85rem;padding:8px 14px;background:var(--orange);color:#221204">Donate</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="home" style="padding-block:56px 76px">
+    <div style="max-width:1120px;margin-inline:auto;padding-inline:clamp(20px,4vw,32px);display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:44px;align-items:center">
+      <div>
+        <span style="display:inline-flex;align-items:center;gap:7px;font-size:.76rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--teal);margin-bottom:14px">A new non-profit in Spain</span>
+        <h1 style="font-size:clamp(2.1rem,1.5rem+3vw,3.6rem);line-height:1.06;font-weight:600">United for a <em style="font-style:normal;color:var(--brand)">Better Future</em></h1>
+        <p style="margin-top:18px;margin-bottom:30px;font-size:1.14rem;color:var(--ink-soft);max-width:560px">Asociación Bridge Forward is a non-profit organization committed to human dignity, protection, education, and creating opportunities for people and communities.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:12px">
+          <a href="#about" style="display:inline-flex;align-items:center;justify-content:center;border-radius:9px;font-weight:600;font-size:.92rem;padding:10px 18px;background:var(--orange);color:#221204">Learn Our Mission</a>
+          <a href="#donate" style="display:inline-flex;align-items:center;justify-content:center;border-radius:9px;font-weight:600;font-size:.92rem;padding:10px 18px;border:1px solid var(--brand);color:var(--brand)">Support Our Mission</a>
+        </div>
+      </div>
+      <img src="assets/hero.jpg" alt="An adult's hand and a child's hand reaching toward each other, fingertips almost touching" style="width:100%;max-width:420px;margin-inline:auto;display:block;border-radius:20px;box-shadow:var(--shadow)">
+    </div>
+  </section>
+
+  <section id="about" style="padding-block:76px">
+    <div style="max-width:1120px;margin-inline:auto;padding-inline:clamp(20px,4vw,32px);display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:56px">
+      <div>
+        <span style="display:inline-flex;align-items:center;gap:7px;font-size:.76rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--teal);margin-bottom:14px">Who We Are</span>
+        <h2 style="font-size:clamp(1.7rem,1.3rem+1.6vw,2.5rem);font-weight:600;margin-bottom:18px">Building Bridges to New Opportunities</h2>
+        <p style="color:var(--ink-soft);font-size:1.02rem">Asociación Bridge Forward was founded to help build a more inclusive society — one that stands in solidarity with, and respects the dignity of, every person. We work to advance initiatives in protection, education, development, participation, and community support, creating opportunities for people to move toward a future with greater dignity and independence.</p>
+        <p style="margin-top:14px;color:var(--ink-soft);font-size:1.02rem">Our vision brings together local commitment in Spain with an international outlook — building partnerships and shaping projects that respond to real needs.</p>
+        <div style="margin-top:26px"><a href="#programs" style="display:inline-flex;align-items:center;justify-content:center;border-radius:9px;font-weight:600;font-size:.85rem;padding:8px 14px;border:1px solid var(--brand);color:var(--brand)">See Our Programs</a></div>
+      </div>
+      <div style="background:var(--surface-alt);border:1px solid var(--border);border-radius:18px;padding:28px">
+        <p style="font-family:'Lora',serif;font-weight:500;font-style:italic;font-size:1.28rem;line-height:1.4;color:var(--brand);border-left:3px solid var(--orange);padding-left:18px;margin-bottom:26px">"To promote human dignity and create opportunities for people and communities through education, protection, development, participation, and social and humanitarian support."</p>
+        <div style="display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+          <div style="display:flex;gap:12px">
+            <span style="flex:none;width:38px;height:38px;border-radius:10px;background:var(--surface);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--brand)"><svg width="19" height="19" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.8"><circle cx="12" cy="12" r="9"></circle><circle cx="12" cy="8.6" r="2.3"></circle><path d="M7,17 a5,4 0 0 1 10,0"></path></svg></span>
+            <div><h4 style="font-family:'Inter',sans-serif;font-weight:700;font-size:.95rem;margin:0 0 3px">Dignity</h4><p style="margin:0;font-size:.87rem;color:var(--ink-soft)">We respect the worth and rights of every person.</p></div>
+          </div>
+          <div style="display:flex;gap:12px">
+            <span style="flex:none;width:38px;height:38px;border-radius:10px;background:var(--surface);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--brand)"><svg width="19" height="19" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.8"><circle cx="9" cy="12" r="5"></circle><circle cx="15" cy="12" r="5"></circle></svg></span>
+            <div><h4 style="font-family:'Inter',sans-serif;font-weight:700;font-size:.95rem;margin:0 0 3px">Inclusion</h4><p style="margin:0;font-size:.87rem;color:var(--ink-soft)">We promote participation and equal opportunity.</p></div>
+          </div>
+          <div style="display:flex;gap:12px">
+            <span style="flex:none;width:38px;height:38px;border-radius:10px;background:var(--surface);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--brand)"><svg width="19" height="19" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.8"><path d="M2,12 C5,6 19,6 22,12 C19,18 5,18 2,12 Z"></path><circle cx="12" cy="12" r="2.6"></circle></svg></span>
+            <div><h4 style="font-family:'Inter',sans-serif;font-weight:700;font-size:.95rem;margin:0 0 3px">Transparency</h4><p style="margin:0;font-size:.87rem;color:var(--ink-soft)">We act with responsibility, openness, and accountability.</p></div>
+          </div>
+          <div style="display:flex;gap:12px">
+            <span style="flex:none;width:38px;height:38px;border-radius:10px;background:var(--surface);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--brand)"><svg width="19" height="19" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.8"><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="12" r="3"></circle><line x1="9" y1="12" x2="15" y2="12"></line><circle cx="12" cy="12" r="1.5" style="fill:currentColor;stroke:none"></circle></svg></span>
+            <div><h4 style="font-family:'Inter',sans-serif;font-weight:700;font-size:.95rem;margin:0 0 3px">Solidarity</h4><p style="margin:0;font-size:.87rem;color:var(--ink-soft)">We stand with the communities and people who need support.</p></div>
+          </div>
+          <div style="display:flex;gap:12px">
+            <span style="flex:none;width:38px;height:38px;border-radius:10px;background:var(--surface);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--brand)"><svg width="19" height="19" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.8"><line x1="6" y1="3" x2="6" y2="21"></line><path d="M6,4 L18,7 L6,11 Z" style="fill:currentColor;stroke:none"></path></svg></span>
+            <div><h4 style="font-family:'Inter',sans-serif;font-weight:700;font-size:.95rem;margin:0 0 3px">Commitment</h4><p style="margin:0;font-size:.87rem;color:var(--ink-soft)">We pursue sustainable solutions built around real needs.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="programs" style="padding-block:76px;background:var(--surface-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+    <div style="max-width:1120px;margin-inline:auto;padding-inline:clamp(20px,4vw,32px)">
+      <div style="max-width:640px;margin-bottom:38px">
+        <span style="display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:var(--surface);color:var(--teal);border:1px solid var(--border);padding:5px 11px;border-radius:99px;margin-bottom:16px">Launching Soon</span><br>
+        <span style="display:inline-flex;align-items:center;gap:7px;font-size:.76rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--teal);margin-bottom:14px">Our Programs</span>
+        <h2 style="font-size:clamp(1.6rem,1.2rem+1.4vw,2.2rem);font-weight:600;margin:10px 0 14px">Programs in the Making</h2>
+        <p style="font-size:1.08rem;color:var(--ink-soft)">We're building programs and initiatives designed to meet real needs and open up opportunities for people and communities. As our first initiatives take shape, you'll find the full detail here — for now, here's where we're focusing.</p>
+      </div>
+      <div style="display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:22px">
+          <span style="display:flex;width:38px;height:38px;border-radius:10px;background:var(--surface);border:1px solid var(--border);align-items:center;justify-content:center;color:var(--teal);margin-bottom:14px"><svg width="20" height="20" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.7"><path d="M12,3 L20,6 V11 C20,16 16.5,19.5 12,21 C7.5,19.5 4,16 4,11 V6 Z"></path></svg></span>
+          <h4 style="font-size:1rem;font-weight:700;margin:0 0 5px">Protection</h4>
+          <p style="margin:0;font-size:.88rem;color:var(--ink-soft)">Supporting the safety and dignity of people in vulnerable situations.</p>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:22px">
+          <span style="display:flex;width:38px;height:38px;border-radius:10px;background:var(--surface);border:1px solid var(--border);align-items:center;justify-content:center;color:var(--teal);margin-bottom:14px"><svg width="20" height="20" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.7"><path d="M3,6.5 C7,4.5 9,4.5 12,6.5 C15,4.5 17,4.5 21,6.5 V18.5 C17,16.5 15,16.5 12,18.5 C9,16.5 7,16.5 3,18.5 Z"></path></svg></span>
+          <h4 style="font-size:1rem;font-weight:700;margin:0 0 5px">Education</h4>
+          <p style="margin:0;font-size:.88rem;color:var(--ink-soft)">Expanding access to learning, skills, and opportunity.</p>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:22px">
+          <span style="display:flex;width:38px;height:38px;border-radius:10px;background:var(--surface);border:1px solid var(--border);align-items:center;justify-content:center;color:var(--teal);margin-bottom:14px"><svg width="20" height="20" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.7"><rect x="4" y="14" width="4" height="6" rx="1"></rect><rect x="10" y="9" width="4" height="11" rx="1"></rect><rect x="16" y="4" width="4" height="16" rx="1"></rect></svg></span>
+          <h4 style="font-size:1rem;font-weight:700;margin:0 0 5px">Development</h4>
+          <p style="margin:0;font-size:.88rem;color:var(--ink-soft)">Building sustainable, community-led solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" style="padding-block:76px">
+    <div style="max-width:1120px;margin-inline:auto;padding-inline:clamp(20px,4vw,32px)">
+      <div style="max-width:640px;margin-bottom:38px">
+        <span style="display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:var(--surface-alt);color:var(--teal);border:1px solid var(--border);padding:5px 11px;border-radius:99px;margin-bottom:16px">First Projects Coming Soon</span><br>
+        <span style="display:inline-flex;align-items:center;gap:7px;font-size:.76rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--teal);margin-bottom:14px">Our Projects</span>
+        <h2 style="font-size:clamp(1.6rem,1.2rem+1.4vw,2.2rem);font-weight:600;margin:10px 0 14px">Our Projects</h2>
+        <p style="font-size:1.08rem;color:var(--ink-soft)">This is where we'll present our projects, initiatives, and activities — their purpose, progress, and results, shared clearly and transparently.</p>
+      </div>
+      <div style="display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+        <div style="border:1.5px dashed var(--border);border-radius:14px;padding:26px 20px;display:flex;flex-direction:column;align-items:flex-start;gap:10px;color:var(--ink-soft);background:var(--surface)">
+          <span style="display:flex;width:38px;height:38px;border-radius:10px;background:var(--bg);border:1px solid var(--border);align-items:center;justify-content:center;color:var(--brand)"><svg width="18" height="18" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.7"><rect x="3" y="4" width="18" height="16" rx="2"></rect><circle cx="8.5" cy="9.5" r="1.6"></circle><path d="M3,17 L9,12 L13,15 L17,10 L21,14"></path></svg></span>
+          <span style="font-size:.85rem;font-weight:600">Project details coming soon</span>
+        </div>
+        <div style="border:1.5px dashed var(--border);border-radius:14px;padding:26px 20px;display:flex;flex-direction:column;align-items:flex-start;gap:10px;color:var(--ink-soft);background:var(--surface)">
+          <span style="display:flex;width:38px;height:38px;border-radius:10px;background:var(--bg);border:1px solid var(--border);align-items:center;justify-content:center;color:var(--brand)"><svg width="18" height="18" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.7"><rect x="3" y="4" width="18" height="16" rx="2"></rect><circle cx="8.5" cy="9.5" r="1.6"></circle><path d="M3,17 L9,12 L13,15 L17,10 L21,14"></path></svg></span>
+          <span style="font-size:.85rem;font-weight:600">Project details coming soon</span>
+        </div>
+        <div style="border:1.5px dashed var(--border);border-radius:14px;padding:26px 20px;display:flex;flex-direction:column;align-items:flex-start;gap:10px;color:var(--ink-soft);background:var(--surface)">
+          <span style="display:flex;width:38px;height:38px;border-radius:10px;background:var(--bg);border:1px solid var(--border);align-items:center;justify-content:center;color:var(--brand)"><svg width="18" height="18" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.7"><rect x="3" y="4" width="18" height="16" rx="2"></rect><circle cx="8.5" cy="9.5" r="1.6"></circle><path d="M3,17 L9,12 L13,15 L17,10 L21,14"></path></svg></span>
+          <span style="font-size:.85rem;font-weight:600">Project details coming soon</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="involved" style="padding-block:76px;background:var(--surface-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+    <div style="max-width:1120px;margin-inline:auto;padding-inline:clamp(20px,4vw,32px);display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:52px">
+      <div>
+        <span style="display:inline-flex;align-items:center;gap:7px;font-size:.76rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--teal);margin-bottom:14px">Get Involved</span>
+        <h2 style="font-size:clamp(1.6rem,1.2rem+1.4vw,2.2rem);font-weight:600;margin-bottom:14px">Be Part of Bridge Forward</h2>
+        <p style="font-size:1.08rem;color:var(--ink-soft);max-width:420px">There are many ways to support our mission. Volunteer, collaborate on our activities, share your skills and expertise, or support our projects directly.</p>
+      </div>
+      <form id="involveForm" style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:26px;box-shadow:var(--shadow)">
+        <div style="margin-bottom:16px">
+          <label for="i-name" style="display:block;font-size:.82rem;font-weight:600;margin-bottom:6px">Full name</label>
+          <input id="i-name" type="text" placeholder="Jane Doe">
+        </div>
+        <div style="display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));margin-bottom:16px">
+          <div>
+            <label for="i-email" style="display:block;font-size:.82rem;font-weight:600;margin-bottom:6px">Email</label>
+            <input id="i-email" type="email" placeholder="jane@email.com">
+          </div>
+          <div>
+            <label for="i-phone" style="display:block;font-size:.82rem;font-weight:600;margin-bottom:6px">Phone (optional)</label>
+            <input id="i-phone" type="tel" placeholder="+34 600 000 000">
+          </div>
+        </div>
+        <div style="margin-bottom:16px">
+          <label for="i-way" style="display:block;font-size:.82rem;font-weight:600;margin-bottom:6px">How would you like to help?</label>
+          <select id="i-way">
+            <option>Volunteering</option>
+            <option>Professional collaboration</option>
+            <option>Activities &amp; events</option>
+            <option>Spreading the word</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div style="margin-bottom:16px">
+          <label for="i-msg" style="display:block;font-size:.82rem;font-weight:600;margin-bottom:6px">Message</label>
+          <textarea id="i-msg" placeholder="Tell us a bit about how you'd like to help..."></textarea>
+        </div>
+        <button type="button" id="involveSendBtn" style="width:100%;display:inline-flex;align-items:center;justify-content:center;border-radius:9px;font-weight:600;font-size:.92rem;padding:10px 18px;background:var(--orange);color:#221204;border:0;cursor:pointer">Send</button>
+        <p id="involveNote" style="display:none;font-size:.82rem;color:var(--ink-soft);margin:10px 0 0">Preview only — this form will go live when we publish the final site.</p>
+      </form>
+    </div>
+  </section>
+
+  <section id="news" style="padding-block:76px">
+    <div style="max-width:1120px;margin-inline:auto;padding-inline:clamp(20px,4vw,32px)">
+      <div style="max-width:640px;margin-bottom:38px">
+        <span style="display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:var(--surface-alt);color:var(--teal);border:1px solid var(--border);padding:5px 11px;border-radius:99px;margin-bottom:16px">Stories Coming Soon</span><br>
+        <span style="display:inline-flex;align-items:center;gap:7px;font-size:.76rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--teal);margin-bottom:14px">News</span>
+        <h2 style="font-size:clamp(1.6rem,1.2rem+1.4vw,2.2rem);font-weight:600;margin:10px 0 14px">News &amp; Updates</h2>
+        <p style="font-size:1.08rem;color:var(--ink-soft)">Follow our activities, projects, partnerships, and the latest from Bridge Forward as we grow.</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:16px 18px;font-size:.92rem;color:var(--ink-soft)">
+        <svg width="18" height="18" viewBox="0 0 24 24" style="fill:none;stroke:var(--teal);stroke-width:1.8"><path d="M3,7 L12,13 L21,7"></path><rect x="3" y="5" width="18" height="14" rx="2"></rect></svg>
+        <span>Want to be the first to know? Email us at <a href="mailto:info@bridgeforwardspain.org" style="color:var(--brand);font-weight:600">info@bridgeforwardspain.org</a> and we'll keep you posted.</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="donate" style="padding-block:76px">
+    <div style="max-width:1120px;margin-inline:auto;padding-inline:clamp(20px,4vw,32px)">
+      <div style="background:var(--brand);color:#F5F7F6;border-radius:20px;padding:40px 28px;text-align:center">
+        <span style="display:inline-flex;align-items:center;gap:7px;font-size:.76rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--orange)">Support Us</span>
+        <h2 style="color:#F5F7F6;font-size:clamp(1.7rem,1.3rem+1.6vw,2.4rem);margin-top:14px">Support Our Mission</h2>
+        <p style="color:#D7E2E9;max-width:520px;margin:16px auto 26px;font-size:1.02rem">We're setting up a simple, secure way to give online. Until then, reach out directly — our team will help you support Bridge Forward's work.</p>
+        <a href="#contact" style="display:inline-flex;align-items:center;justify-content:center;border-radius:9px;font-weight:600;font-size:.92rem;padding:10px 18px;background:var(--orange);color:#221204">Contact Us About Giving</a>
+        <small style="display:block;margin-top:14px;opacity:.75;font-size:.8rem">Online giving launches soon.</small>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding-block:76px;background:var(--surface-alt);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+    <div style="max-width:1120px;margin-inline:auto;padding-inline:clamp(20px,4vw,32px);display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:52px">
+      <div>
+        <span style="display:inline-flex;align-items:center;gap:7px;font-size:.76rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--teal);margin-bottom:14px">Contact</span>
+        <h2 style="font-size:clamp(1.6rem,1.2rem+1.4vw,2.2rem);font-weight:600;margin-bottom:14px">We're Here to Listen</h2>
+        <p style="font-size:1.08rem;color:var(--ink-soft);max-width:420px">Want to learn more about our association, collaborate with us, or get updates on our projects? Reach out to our team.</p>
+        <p style="margin-top:20px;font-weight:600"><a href="mailto:info@bridgeforwardspain.org" style="color:var(--brand)">info@bridgeforwardspain.org</a></p>
+      </div>
+      <form id="contactForm" style="background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:26px;box-shadow:var(--shadow)">
+        <div style="margin-bottom:16px">
+          <label for="c-name" style="display:block;font-size:.82rem;font-weight:600;margin-bottom:6px">Name</label>
+          <input id="c-name" type="text" placeholder="Your name">
+        </div>
+        <div style="margin-bottom:16px">
+          <label for="c-email" style="display:block;font-size:.82rem;font-weight:600;margin-bottom:6px">Email</label>
+          <input id="c-email" type="email" placeholder="you@email.com">
+        </div>
+        <div style="margin-bottom:16px">
+          <label for="c-subject" style="display:block;font-size:.82rem;font-weight:600;margin-bottom:6px">Subject</label>
+          <input id="c-subject" type="text" placeholder="How can we help?">
+        </div>
+        <div style="margin-bottom:16px">
+          <label for="c-msg" style="display:block;font-size:.82rem;font-weight:600;margin-bottom:6px">Message</label>
+          <textarea id="c-msg" placeholder="Write your message..."></textarea>
+        </div>
+        <button type="button" id="contactSendBtn" style="width:100%;display:inline-flex;align-items:center;justify-content:center;border-radius:9px;font-weight:600;font-size:.92rem;padding:10px 18px;background:var(--orange);color:#221204;border:0;cursor:pointer">Send Message</button>
+        <p id="contactNote" style="display:none;font-size:.82rem;color:var(--ink-soft);margin:10px 0 0">Preview only — this form will go live when we publish the final site.</p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer style="background:var(--brand-deep);color:#CBD8E1">
+  <div style="max-width:1120px;margin-inline:auto;padding:56px clamp(20px,4vw,32px) 30px">
+    <div style="display:grid;gap:36px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+      <div>
+        <span style="color:#F2F6F8;font-family:'Lora',serif;font-weight:600;font-size:1.15rem">Asociación Bridge Forward</span>
+        <p style="margin-top:10px;font-size:.9rem;color:#9FB4C4;max-width:280px">United for a better future. A non-profit association based in Spain, working with an international outlook.</p>
+      </div>
+      <div>
+        <h5 style="font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;color:#7FA0B6;margin:0 0 14px">Explore</h5>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px">
+          <li><a href="#about" style="color:#CBD8E1;font-size:.92rem">About</a></li>
+          <li><a href="#programs" style="color:#CBD8E1;font-size:.92rem">Programs</a></li>
+          <li><a href="#projects" style="color:#CBD8E1;font-size:.92rem">Projects</a></li>
+          <li><a href="#involved" style="color:#CBD8E1;font-size:.92rem">Get Involved</a></li>
+          <li><a href="#news" style="color:#CBD8E1;font-size:.92rem">News</a></li>
+          <li><a href="#contact" style="color:#CBD8E1;font-size:.92rem">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 style="font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;color:#7FA0B6;margin:0 0 14px">Connect</h5>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px">
+          <li><a href="mailto:info@bridgeforwardspain.org" style="color:#CBD8E1;font-size:.92rem">info@bridgeforwardspain.org</a></li>
+          <li style="color:#7FA0B6;font-size:.92rem">Spain</li>
+          <li style="color:#7FA0B6;font-size:.85rem">Follow us soon — social channels launching shortly.</li>
+        </ul>
+      </div>
+    </div>
+    <div style="margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,255,255,.09);display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;font-size:.8rem;color:#7FA0B6">
+      <span>© 2026 Asociación Bridge Forward · NIF G93862399 · Spain</span>
+      <span>Site draft — final version in Spanish, English &amp; French</span>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  var strip = document.getElementById('reviewStrip');
+  var dismissBtn = document.getElementById('dismissReviewBtn');
+  try {
+    if (localStorage.getItem('bf_review_dismissed') === '1' && strip) strip.style.display = 'none';
+  } catch (e) {}
+  if (dismissBtn) {
+    dismissBtn.addEventListener('click', function () {
+      if (strip) strip.style.display = 'none';
+      try { localStorage.setItem('bf_review_dismissed', '1'); } catch (e) {}
+    });
+  }
+
+  function wireForm(btnId, noteId) {
+    var btn = document.getElementById(btnId);
+    var note = document.getElementById(noteId);
+    if (!btn) return;
+    btn.addEventListener('click', function () {
+      if (note) note.style.display = 'block';
+    });
+  }
+  wireForm('involveSendBtn', 'involveNote');
+  wireForm('contactSendBtn', 'contactNote');
+})();
+</script>
+</body>
+</html>
