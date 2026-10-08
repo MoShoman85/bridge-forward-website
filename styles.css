@@ -1,0 +1,17 @@
+:root{
+  --bg:#F5F7F6; --surface:#FFFFFF; --surface-alt:#EDF3F0; --ink:#142433; --ink-soft:#4B5F70;
+  --brand:#163A5F; --brand-deep:#0D2437; --teal:#1E8A93; --green:#3AA267; --orange:#F2954A; --orange-deep:#D97A2E;
+  --border:#DCE4E1; --shadow:0 1px 2px rgba(14,36,55,.06), 0 8px 24px -12px rgba(14,36,55,.22);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Lora",Georgia,serif;margin:0;text-wrap:balance}
+a{color:var(--brand);text-decoration:none}
+a:hover{color:var(--orange-deep)}
+button,input,select,textarea{font:inherit}
+img,svg{display:block;max-width:100%}
+input,select,textarea{width:100%;border:1px solid var(--border);border-radius:8px;background:var(--bg);color:var(--ink);padding:10px 12px}
+textarea{resize:vertical;min-height:90px}
+:focus-visible{outline:2.5px solid var(--orange);outline-offset:3px;border-radius:4px}
+.lang-btn{border:0;background:none;font:inherit;font-size:.72rem;font-weight:700;letter-spacing:.03em;padding:4px 9px;border-radius:99px;color:var(--ink-soft);cursor:pointer}
+.lang-btn.active{background:var(--brand);color:#F5F7F6;cursor:default}

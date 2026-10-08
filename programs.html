@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Programas · Asociación Bridge Forward</title>
+<meta name="description" id="metaDescription" content="Asociación Bridge Forward es una organización sin ánimo de lucro comprometida con la dignidad humana, la protección, la educación y la creación de oportunidades para las personas y las comunidades.">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="512x512" href="assets/favicon-512.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div style="width:100%;min-height:100vh;display:flex;flex-direction:column;background:var(--bg);color:var(--ink)">
+
+<header style="background:var(--surface);border-bottom:1px solid var(--border)">
+  <div style="max-width:1120px;margin-inline:auto;padding:14px clamp(20px,4vw,32px);display:flex;align-items:center;gap:18px;flex-wrap:wrap;row-gap:10px">
+    <a href="index.html" style="display:flex;align-items:center;gap:10px;flex:none">
+      <img src="assets/logo.jpg" alt="Asociación Bridge Forward" style="height:104px;width:auto;border-radius:12px">
+    </a>
+    <nav aria-label="Primary" style="display:flex;gap:20px;flex-wrap:wrap;font-size:.9rem;font-weight:500">
+      <a href="about.html" style="color:var(--ink-soft)" data-i18n="nav.about">About</a>
+      <a href="programs.html" style="color:var(--brand);font-weight:700" data-i18n="nav.programs">Programs</a>
+      <a href="projects.html" style="color:var(--ink-soft)" data-i18n="nav.projects">Projects</a>
+      <a href="involved.html" style="color:var(--ink-soft)" data-i18n="nav.involved">Get Involved</a>
+      <a href="news.html" style="color:var(--ink-soft)" data-i18n="nav.news">News</a>
+      <a href="contact.html" style="color:var(--ink-soft)" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div style="display:flex;align-items:center;gap:10px;margin-left:auto">
+      <div role="group" aria-label="Language" style="display:flex;gap:3px;background:var(--surface-alt);border:1px solid var(--border);border-radius:99px;padding:3px">
+        <button type="button" class="lang-btn" id="langEs" onclick="setLanguage('es')">ES</button>
+        <button type="button" class="lang-btn" id="langEn" onclick="setLanguage('en')">EN</button>
+        <button type="button" class="lang-btn" id="langFr" onclick="setLanguage('fr')">FR</button>
+      </div>
+      <a href="donate.html" style="display:inline-flex;align-items:center;justify-content:center;border-radius:9px;font-weight:600;font-size:.85rem;padding:8px 14px;background:var(--orange);color:#221204" data-i18n="nav.donate">Donate</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="programs" style="padding-block:76px">
+    <div style="max-width:1120px;margin-inline:auto;padding-inline:clamp(20px,4vw,32px)">
+      <div style="max-width:680px;margin-bottom:38px">
+        <span style="display:inline-flex;align-items:center;gap:7px;font-size:.76rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--teal);margin-bottom:14px" data-i18n="programs.eyebrow">Our Programs</span>
+        <h2 style="font-size:clamp(1.6rem,1.2rem+1.4vw,2.2rem);font-weight:600;margin:10px 0 14px" data-i18n="programs.h2">Where We Focus</h2>
+        <p style="font-size:1.08rem;color:var(--ink-soft)" data-i18n="programs.p">These four programs guide everything we do — we'll announce the specific projects and initiatives under each here as they launch.</p>
+      </div>
+      <div style="display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:12px">
+          <div style="display:flex;align-items:center;gap:12px">
+            <span style="display:flex;flex-shrink:0;width:34px;height:34px;border-radius:9px;background:var(--surface-alt);border:1px solid var(--border);align-items:center;justify-content:center;color:var(--teal);font-weight:700;font-size:.92rem">1</span>
+            <h4 style="font-size:1.02rem;font-weight:700;margin:0" data-i18n="programs.p1.title">Women and Child Protection and Resilience Program</h4>
+          </div>
+          <p style="margin:0;font-size:.9rem;color:var(--ink-soft)" data-i18n="programs.p1.objective">Strengthening the protection of women and children and supporting their resilience and ability to live with dignity, especially in communities affected by crises, poverty, displacement, and disasters.</p>
+          <ul data-i18n-html="programs.p1.areas" style="margin:0;padding-left:18px;font-size:.86rem;color:var(--ink-soft);display:flex;flex-direction:column;gap:4px">
+            <li>Food security and livelihood support</li>
+            <li>Water and sanitation projects sensitive to the needs of women and girls</li>
+            <li>Economic empowerment of women</li>
+            <li>Psychosocial support for children and women</li>
+            <li>Protection and prevention activities against violence and exploitation</li>
+            <li>Support for the most vulnerable families</li>
+          </ul>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:12px">
+          <div style="display:flex;align-items:center;gap:12px">
+            <span style="display:flex;flex-shrink:0;width:34px;height:34px;border-radius:9px;background:var(--surface-alt);border:1px solid var(--border);align-items:center;justify-content:center;color:var(--teal);font-weight:700;font-size:.92rem">2</span>
+            <h4 style="font-size:1.02rem;font-weight:700;margin:0" data-i18n="programs.p2.title">Education and Culture Program</h4>
+          </div>
+          <p style="margin:0;font-size:.9rem;color:var(--ink-soft)" data-i18n="programs.p2.objective">Providing educational, learning, and cultural opportunities, especially for children, women, and youth in crisis-affected areas.</p>
+          <ul data-i18n-html="programs.p2.areas" style="margin:0;padding-left:18px;font-size:.86rem;color:var(--ink-soft);display:flex;flex-direction:column;gap:4px">
+            <li>Supporting return to school</li>
+            <li>Establishing and supporting safe learning spaces</li>
+            <li>Literacy programs for women</li>
+            <li>Non-formal training and learning</li>
+            <li>Cultural and educational activities</li>
+            <li>Community awareness-raising</li>
+            <li>Supporting children and youth in continuing their education</li>
+          </ul>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:12px">
+          <div style="display:flex;align-items:center;gap:12px">
+            <span style="display:flex;flex-shrink:0;width:34px;height:34px;border-radius:9px;background:var(--surface-alt);border:1px solid var(--border);align-items:center;justify-content:center;color:var(--teal);font-weight:700;font-size:.92rem">3</span>
+            <h4 style="font-size:1.02rem;font-weight:700;margin:0" data-i18n="programs.p3.title">Reconstruction and Inclusive Development Program</h4>
+          </div>
+          <p style="margin:0;font-size:.9rem;color:var(--ink-soft)" data-i18n="programs.p3.objective">Contributing to the reconstruction of affected communities and creating sustainable economic, educational, and professional opportunities.</p>
+          <ul data-i18n-html="programs.p3.areas" style="margin:0;padding-left:18px;font-size:.86rem;color:var(--ink-soft);display:flex;flex-direction:column;gap:4px">
+            <li>Housing rehabilitation</li>
+            <li>Rehabilitation of educational and community facilities</li>
+            <li>Support for micro and small enterprises</li>
+            <li>Economic empowerment</li>
+            <li>Vocational training for youth and women</li>
+            <li>Skills development and employment opportunities</li>
+            <li>Psychosocial and community recovery</li>
+            <li>Support for local initiatives and sustainable development</li>
+          </ul>
+        </div>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:24px;display:flex;flex-direction:column;gap:12px">
+          <div style="display:flex;align-items:center;gap:12px">
+            <span style="display:flex;flex-shrink:0;width:34px;height:34px;border-radius:9px;background:var(--surface-alt);border:1px solid var(--border);align-items:center;justify-content:center;color:var(--teal);font-weight:700;font-size:.92rem">4</span>
+            <h4 style="font-size:1.02rem;font-weight:700;margin:0" data-i18n="programs.p4.title">Humanitarian Emergency Response Program</h4>
+          </div>
+          <p style="margin:0;font-size:.9rem;color:var(--ink-soft)" data-i18n="programs.p4.objective">Providing a rapid response to humanitarian needs resulting from crises, disasters, and emergencies.</p>
+          <ul data-i18n-html="programs.p4.areas" style="margin:0;padding-left:18px;font-size:.86rem;color:var(--ink-soft);display:flex;flex-direction:column;gap:4px">
+            <li>Emergency response plans</li>
+            <li>Rapid response to urgent needs</li>
+            <li>Training of community response teams</li>
+            <li>Water, sanitation, and hygiene (WASH)</li>
+            <li>Food</li>
+            <li>Shelter</li>
+            <li>Basic and non-food items</li>
+            <li>Support for families, children, and women affected by emergencies</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer style="background:var(--brand-deep);color:#CBD8E1">
+  <div style="max-width:1120px;margin-inline:auto;padding:56px clamp(20px,4vw,32px) 30px">
+    <div style="display:grid;gap:36px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
+      <div>
+        <span style="color:#F2F6F8;font-family:'Lora',serif;font-weight:600;font-size:1.15rem">Asociación Bridge Forward</span>
+        <p style="margin-top:10px;font-size:.9rem;color:#9FB4C4;max-width:280px" data-i18n="footer.tagline">United for a better future.</p>
+      </div>
+      <div>
+        <h5 style="font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;color:#7FA0B6;margin:0 0 14px" data-i18n="footer.explore">Explore</h5>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px">
+          <li><a href="about.html" style="color:#CBD8E1;font-size:.92rem" data-i18n="nav.about">About</a></li>
+          <li><a href="programs.html" style="color:#CBD8E1;font-size:.92rem" data-i18n="nav.programs">Programs</a></li>
+          <li><a href="projects.html" style="color:#CBD8E1;font-size:.92rem" data-i18n="nav.projects">Projects</a></li>
+          <li><a href="involved.html" style="color:#CBD8E1;font-size:.92rem" data-i18n="nav.involved">Get Involved</a></li>
+          <li><a href="news.html" style="color:#CBD8E1;font-size:.92rem" data-i18n="nav.news">News</a></li>
+          <li><a href="contact.html" style="color:#CBD8E1;font-size:.92rem" data-i18n="nav.contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 style="font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;color:#7FA0B6;margin:0 0 14px" data-i18n="footer.connect">Connect</h5>
+        <ul style="list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px">
+          <li><a href="mailto:info@bridgeforwardspain.org" style="color:#CBD8E1;font-size:.92rem">info@bridgeforwardspain.org</a></li>
+          <li style="color:#CBD8E1;font-size:.92rem" data-i18n="contact.address">Calle Manuela Estellés, núm. 38, planta 1, puerta 3 · 46022 Valencia, España</li>
+          <li><a href="tel:+34604819161" style="color:#CBD8E1;font-size:.92rem">+34 604 819 161</a></li>
+          <li style="color:#7FA0B6;font-size:.8rem" data-i18n="contact.registration">Registro Nacional de Asociaciones, Sección 1ª, Nº 633.568</li>
+          <li style="color:#7FA0B6;font-size:.92rem" data-i18n="footer.spain">Spain</li>
+          <li style="color:#7FA0B6;font-size:.85rem" data-i18n="footer.followsoon">Follow us soon.</li>
+        </ul>
+      </div>
+    </div>
+    <div style="margin-top:44px;padding-top:22px;border-top:1px solid rgba(255,255,255,.09);font-size:.8rem;color:#7FA0B6;display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center">
+      <span data-i18n="footer.legal">© 2026 Asociación Bridge Forward · NIF G93862399 · Spain</span>
+      <a href="privacy.html" style="color:#7FA0B6" data-i18n="footer.privacy">Privacy Policy</a>
+      <a href="legal.html" style="color:#7FA0B6" data-i18n="footer.legalnotice">Legal Notice</a>
+    </div>
+  </div>
+</footer>
+
+</div>
+
+<script>var PAGE_ID = "programs";</script>
+<script src="translations.js"></script>
+</body>
+</html>
