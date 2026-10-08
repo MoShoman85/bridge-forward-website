@@ -94,9 +94,9 @@ FOOTER_HTML = '''<footer style="background:var(--brand-deep);color:#CBD8E1">
 </footer>'''
 
 
-def page(path, page_id, title, description, body):
+def page(path, page_id, title, description, body, nav_active=None):
     head = HEAD_COMMON
-    active = page_id if page_id in PAGES_NAV else ""
+    active = nav_active if nav_active is not None else (page_id if page_id in PAGES_NAV else "")
     return f'''<!doctype html>
 <html lang="es">
 <head>
@@ -263,24 +263,65 @@ PROGRAMS_BODY = '''  <section id="programs" style="padding-block:76px">
 PROJECTS_BODY = '''  <section id="projects" style="padding-block:76px">
     <div style="max-width:1120px;margin-inline:auto;padding-inline:clamp(20px,4vw,32px)">
       <div style="max-width:640px;margin-bottom:38px">
-        <span style="display:inline-block;font-size:.72rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;background:var(--surface-alt);color:var(--teal);border:1px solid var(--border);padding:5px 11px;border-radius:99px;margin-bottom:16px" data-i18n="projects.badge">First Projects Coming Soon</span><br>
         <span style="display:inline-flex;align-items:center;gap:7px;font-size:.76rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--teal);margin-bottom:14px" data-i18n="projects.eyebrow">Our Projects</span>
         <h2 style="font-size:clamp(1.6rem,1.2rem+1.4vw,2.2rem);font-weight:600;margin:10px 0 14px" data-i18n="projects.h2">Our Projects</h2>
         <p style="font-size:1.08rem;color:var(--ink-soft)" data-i18n="projects.p">This is where we'll present our projects.</p>
       </div>
-      <div style="display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">
-        <div style="border:1.5px dashed var(--border);border-radius:14px;padding:26px 20px;display:flex;flex-direction:column;align-items:flex-start;gap:10px;color:var(--ink-soft);background:var(--surface)">
-          <span style="display:flex;width:38px;height:38px;border-radius:10px;background:var(--bg);border:1px solid var(--border);align-items:center;justify-content:center;color:var(--brand)"><svg width="18" height="18" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.7"><rect x="3" y="4" width="18" height="16" rx="2"></rect><circle cx="8.5" cy="9.5" r="1.6"></circle><path d="M3,17 L9,12 L13,15 L17,10 L21,14"></path></svg></span>
-          <span style="font-size:.85rem;font-weight:600" data-i18n="projects.card">Project details coming soon</span>
+      <div style="display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))">
+        <div style="border:1px solid var(--border);border-radius:14px;padding:26px;display:flex;flex-direction:column;gap:12px;background:var(--surface);box-shadow:var(--shadow)">
+          <span style="display:flex;width:38px;height:38px;border-radius:10px;background:var(--surface-alt);border:1px solid var(--border);align-items:center;justify-content:center;color:var(--brand)"><svg width="18" height="18" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.7"><circle cx="9" cy="8" r="3"></circle><circle cx="17" cy="8" r="3"></circle><path d="M3,20 C3,16 6,14 9,14 C12,14 15,16 15,20"></path><path d="M13,20 C13,16.5 15,14.5 17,14.5 C19.5,14.5 21,16.5 21,20"></path></svg></span>
+          <h4 style="font-size:1.05rem;font-weight:700;margin:0" data-i18n="convivencia.h2">Convivencia</h4>
+          <p style="margin:0;font-size:.92rem;color:var(--ink-soft)" data-i18n="projects.convivencia.teaser">A program of meeting, intercultural exchange, Spanish-language learning, and community participation, first rolled out in Valencia.</p>
+          <a href="convivencia.html" style="font-size:.88rem;font-weight:600;color:var(--brand)" data-i18n="projects.convivencia.cta">See the project</a>
         </div>
-        <div style="border:1.5px dashed var(--border);border-radius:14px;padding:26px 20px;display:flex;flex-direction:column;align-items:flex-start;gap:10px;color:var(--ink-soft);background:var(--surface)">
+        <div style="border:1.5px dashed var(--border);border-radius:14px;padding:26px 20px;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:10px;color:var(--ink-soft);background:var(--surface)">
           <span style="display:flex;width:38px;height:38px;border-radius:10px;background:var(--bg);border:1px solid var(--border);align-items:center;justify-content:center;color:var(--brand)"><svg width="18" height="18" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.7"><rect x="3" y="4" width="18" height="16" rx="2"></rect><circle cx="8.5" cy="9.5" r="1.6"></circle><path d="M3,17 L9,12 L13,15 L17,10 L21,14"></path></svg></span>
-          <span style="font-size:.85rem;font-weight:600" data-i18n="projects.card">Project details coming soon</span>
+          <span style="font-size:.85rem;font-weight:600" data-i18n="projects.morecoming">More projects coming soon</span>
         </div>
-        <div style="border:1.5px dashed var(--border);border-radius:14px;padding:26px 20px;display:flex;flex-direction:column;align-items:flex-start;gap:10px;color:var(--ink-soft);background:var(--surface)">
-          <span style="display:flex;width:38px;height:38px;border-radius:10px;background:var(--bg);border:1px solid var(--border);align-items:center;justify-content:center;color:var(--brand)"><svg width="18" height="18" viewBox="0 0 24 24" style="fill:none;stroke:currentColor;stroke-width:1.7"><rect x="3" y="4" width="18" height="16" rx="2"></rect><circle cx="8.5" cy="9.5" r="1.6"></circle><path d="M3,17 L9,12 L13,15 L17,10 L21,14"></path></svg></span>
-          <span style="font-size:.85rem;font-weight:600" data-i18n="projects.card">Project details coming soon</span>
-        </div>
+      </div>
+    </div>
+  </section>'''
+
+CONVIVENCIA_BODY = '''  <section style="padding-block:56px 20px">
+    <div style="max-width:760px;margin-inline:auto;padding-inline:clamp(20px,4vw,32px)">
+      <span style="display:inline-flex;align-items:center;gap:7px;font-size:.76rem;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--teal);margin-bottom:14px" data-i18n="convivencia.eyebrow">Our First Project</span>
+      <h2 style="font-size:clamp(1.8rem,1.3rem+1.8vw,2.6rem);font-weight:600;margin:10px 0 8px" data-i18n="convivencia.h2">Convivencia</h2>
+      <p style="font-family:'Lora',serif;font-style:italic;color:var(--brand);font-size:1.1rem;margin:0 0 10px" data-i18n="convivencia.tagline">Meeting · Languages · Culture · Participation · Community</p>
+      <p style="font-size:.95rem;color:var(--ink-soft);margin-bottom:30px" data-i18n="convivencia.location">First rolled out in Valencia, Spain.</p>
+      <div data-i18n-html="convivencia.intro" style="color:var(--ink-soft);font-size:1.02rem;display:flex;flex-direction:column;gap:14px;margin-bottom:10px"></div>
+    </div>
+  </section>
+
+  <section style="padding-block:20px 76px">
+    <div style="max-width:760px;margin-inline:auto;padding-inline:clamp(20px,4vw,32px);display:flex;flex-direction:column;gap:38px">
+      <div>
+        <h3 style="font-size:1.3rem;font-weight:600;margin:0 0 10px" data-i18n="convivencia.objective.h3">Objective</h3>
+        <p style="margin:0;color:var(--ink-soft);font-size:1rem" data-i18n="convivencia.objective.p">Objective text.</p>
+      </div>
+      <div>
+        <h3 style="font-size:1.3rem;font-weight:600;margin:0 0 10px" data-i18n="convivencia.who.h3">Who it's for</h3>
+        <ul data-i18n-html="convivencia.who.list" style="margin:0 0 10px;padding-left:20px;color:var(--ink-soft);font-size:1rem;display:flex;flex-direction:column;gap:5px"></ul>
+        <p style="margin:0;color:var(--ink-soft);font-size:.92rem;font-style:italic" data-i18n="convivencia.who.note">Note.</p>
+      </div>
+      <div>
+        <h3 style="font-size:1.3rem;font-weight:600;margin:0 0 14px" data-i18n="convivencia.what.h3">What we do</h3>
+        <ul data-i18n-html="convivencia.what.list" style="margin:0;padding-left:20px;color:var(--ink-soft);font-size:1rem;display:flex;flex-direction:column;gap:9px"></ul>
+      </div>
+      <div>
+        <h3 style="font-size:1.3rem;font-weight:600;margin:0 0 10px" data-i18n="convivencia.languages.h3">Languages</h3>
+        <p style="margin:0;color:var(--ink-soft);font-size:1rem" data-i18n="convivencia.languages.p">Languages text.</p>
+      </div>
+      <div>
+        <h3 style="font-size:1.3rem;font-weight:600;margin:0 0 14px" data-i18n="convivencia.timeline.h3">How it unfolds</h3>
+        <ul data-i18n-html="convivencia.timeline.list" style="margin:0;padding-left:20px;color:var(--ink-soft);font-size:1rem;display:flex;flex-direction:column;gap:9px"></ul>
+      </div>
+      <div>
+        <h3 style="font-size:1.3rem;font-weight:600;margin:0 0 14px" data-i18n="convivencia.impact.h3">Expected impact</h3>
+        <ul data-i18n-html="convivencia.impact.list" style="margin:0;padding-left:20px;color:var(--ink-soft);font-size:1rem;display:flex;flex-direction:column;gap:6px"></ul>
+      </div>
+      <div style="background:var(--surface-alt);border:1px solid var(--border);border-radius:16px;padding:28px;text-align:center">
+        <p style="margin:0 0 16px;font-size:1.08rem;font-weight:600" data-i18n="convivencia.cta.p">Want to volunteer with Convivencia?</p>
+        <a href="involved.html" style="display:inline-flex;align-items:center;justify-content:center;border-radius:9px;font-weight:600;font-size:.92rem;padding:10px 18px;background:var(--orange);color:#221204" data-i18n="convivencia.cta.btn">Become a volunteer</a>
       </div>
     </div>
   </section>'''
@@ -418,9 +459,19 @@ FILES = [
     ("legal.html", "legal", "Aviso Legal · Asociación Bridge Forward", DESC, LEGAL_BODY),
 ]
 
+# (filename, page_id, title, desc, body, nav_active)
+FILES_WITH_NAV_OVERRIDE = [
+    ("convivencia.html", "convivencia", "Convivencia · Asociación Bridge Forward", DESC, CONVIVENCIA_BODY, "projects"),
+]
+
 if __name__ == "__main__":
     for filename, page_id, title, desc, body in FILES:
         html = page(filename, page_id, title, desc, body)
+        with open(filename, "w", encoding="utf-8") as f:
+            f.write(html)
+        print("wrote", filename)
+    for filename, page_id, title, desc, body, nav_active in FILES_WITH_NAV_OVERRIDE:
+        html = page(filename, page_id, title, desc, body, nav_active=nav_active)
         with open(filename, "w", encoding="utf-8") as f:
             f.write(html)
         print("wrote", filename)
